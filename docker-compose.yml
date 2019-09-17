@@ -1,0 +1,12 @@
+version: '3'
+services:
+  app:
+    build: .
+    volumes:
+      - /projects:/projects
+    working_dir: /projects
+#    environment:
+#      - IONIC_VERSION=5.2.8
+    ports:
+      - 8100:8100
+#    command: ["tail -f /dev/null"]
