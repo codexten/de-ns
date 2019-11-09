@@ -4,6 +4,7 @@ services:
     build: .
     volumes:
       - /projects:/projects
+      - ./.bashrc:/home/codexten/.bashrc
     working_dir: /projects
 #    environment:
 #      - IONIC_VERSION=5.2.8
